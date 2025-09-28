@@ -86,7 +86,7 @@ header {
 
 header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px;
 }
@@ -98,6 +98,10 @@ header .container {
 
 nav ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
 }
 
 nav ul li {
@@ -106,16 +110,25 @@ nav ul li {
 
 nav ul li a {
     font-weight: 600;
-    transition: color 0.3s ease;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: transparent;
+    z-index: 1;
 }
 
 nav ul li a:hover {
-    color: #3498db;
+    color: #fff;
+    background: #3498db;
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(52, 152, 219, 0.15);
+    text-shadow: 0 2px 8px rgba(52, 152, 219, 0.2);
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.gif');
     background-size: cover;
     background-position: center;
     height: 100vh;
