@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahs Studios - Nahs Stuff Machine | Armado de PCs Gaming</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Nahs Studios</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#divisiones">Divisiones</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Bienvenidos a Nahs Studios</h2>
+            <p>Especialistas en armado y venta de PCs gamers a través de nuestra división principal: Nahs Stuff Machine</p>
+            <a href="#nsm" class="btn primary-btn">Nahs Stuff Machine</a>
+            <a href="#proyectos" class="btn secondary-btn">Ver proyectos</a>
+        </div>
+    </section>
+    
+    <section id="divisiones" class="divisions-section">
+        <div class="container">
+            <h2>Nuestras Divisiones</h2>
+            <p class="section-subtitle">Conoce las diferentes áreas en las que trabajamos</p>
+            
+            <!-- Tabs para las divisiones -->
+            <div class="divisions-tabs">
+                <button class="tab-btn active" data-tab="nsm">Nahs Stuff Machine</button>
+                <button class="tab-btn" data-tab="animation">Nahs Studios Animation</button>
+                <button class="tab-btn" data-tab="gaming">Nahs Studios Gaming</button>
+            </div>
+            
+            <!-- Contenido de las divisiones -->
+            <div class="division-content">
+                <!-- NSM -->
+                <div class="division-tab active" id="tab-nsm">
+                    <div class="division-flex">
+                        <div class="division-text">
+                            <h3>Nahs Stuff Machine</h3>
+                            <p>Nuestra división principal especializada en el armado y venta de PCs gamers de alto rendimiento. Ofrecemos equipos personalizados que se adaptan a tus necesidades y presupuesto.</p>
+                            <ul class="division-features">
+                                <li><span class="feature-icon">🔧</span> Armado personalizado</li>
+                                <li><span class="feature-icon">🚀</span> Componentes de alta gama</li>
+                                <li><span class="feature-icon">💻</span> Optimización para gaming</li>
+                                <li><span class="feature-icon">🛠️</span> Soporte técnico especializado</li>
+                            </ul>
+                        </div>
+                        <div class="division-image">
+                            <img src="images/nsm-logo.jpg" alt="Nahs Stuff Machine Logo">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Animation -->
+                <div class="division-tab" id="tab-animation">
+                    <div class="division-flex">
+                        <div class="division-text">
+                            <h3>Nahs Studios Animation</h3>
+                            <p>División dedicada a la creación de contenido animado, desde cortometrajes hasta efectos visuales para proyectos comerciales.</p>
+                            <ul class="division-features">
+                                <li><span class="feature-icon">🎬</span> Animación 2D y 3D</li>
+                                <li><span class="feature-icon">✨</span> Efectos visuales</li>
+                                <li><span class="feature-icon">🎨</span> Diseño de personajes</li>
+                                <li><span class="feature-icon">📱</span> Motion graphics</li>
+                            </ul>
+                        </div>
+                        <div class="division-image">
+                            <img src="images/animation-logo.jpg" alt="Nahs Studios Animation Logo">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gaming -->
+                <div class="division-tab" id="tab-gaming">
+                    <div class="division-flex">
+                        <div class="division-text">
+                            <h3>Nahs Studios Gaming</h3>
+                            <p>Nuestra división enfocada en el desarrollo de videojuegos indie y experiencias interactivas para múltiples plataformas.</p>
+                            <ul class="division-features">
+                                <li><span class="feature-icon">🎮</span> Desarrollo de videojuegos</li>
+                                <li><span class="feature-icon">🌐</span> Experiencias multiplataforma</li>
+                                <li><span class="feature-icon">🧩</span> Game design</li>
+                                <li><span class="feature-icon">🔊</span> Audio y música para juegos</li>
+                            </ul>
+                        </div>
+                        <div class="division-image">
+                            <img src="images/gaming-logo.jpg" alt="Nahs Studios Gaming Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2>Nuestros Proyectos</h2>
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="gaming">PCs Gaming</button>
+                <button class="filter-btn" data-filter="workstation">Workstations</button>
+                <button class="filter-btn" data-filter="custom">Personalizados</button>
+            </div>
+            <div class="project-grid">
+                <!-- PC Gaming 1 -->
+                <div class="project-card" data-category="gaming">
+                    <div class="project-image">
+                        <img src="images/pc-gaming1.jpg" alt="PC Gaming de Alto Rendimiento">
+                    </div>
+                    <div class="project-info">
+                        <h3>PC Gaming de Alto Rendimiento</h3>
+                        <p>Equipo gaming con RTX 3080, Ryzen 9 5900X, 32GB RAM y refrigeración líquida personalizada para máximo rendimiento en juegos AAA.</p>
+                        <div class="specs">
+                            <span class="spec">RTX 3080</span>
+                            <span class="spec">Ryzen 9</span>
+                            <span class="spec">32GB RAM</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <!-- PC Gaming 2 -->
+                <div class="project-card" data-category="gaming">
+                    <div class="project-image">
+                        <img src="images/pc-gaming2.jpg" alt="PC Gaming RGB">
+                    </div>
+                    <div class="project-info">
+                        <h3>PC Gaming RGB</h3>
+                        <p>Configuración gaming con iluminación RGB sincronizada, RTX 3070, Intel i7 12700K y 16GB RAM DDR5 para una experiencia visual impresionante.</p>
+                        <div class="specs">
+                            <span class="spec">RTX 3070</span>
+                            <span class="spec">i7 12700K</span>
+                            <span class="spec">16GB DDR5</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Workstation -->
+                <div class="project-card" data-category="workstation">
+                    <div class="project-image">
+                        <img src="images/workstation.jpg" alt="Workstation Profesional">
+                    </div>
+                    <div class="project-info">
+                        <h3>Workstation Profesional</h3>
+                        <p>Estación de trabajo para diseño 3D y edición de video con Ryzen Threadripper, 64GB RAM y almacenamiento NVMe en RAID para máxima productividad.</p>
+                        <div class="specs">
+                            <span class="spec">Threadripper</span>
+                            <span class="spec">64GB RAM</span>
+                            <span class="spec">NVMe RAID</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <!-- PC Personalizado -->
+                <div class="project-card" data-category="custom">
+                    <div class="project-image">
+                        <img src="images/custom-pc.jpg" alt="PC Personalizado Temático">
+                    </div>
+                    <div class="project-info">
+                        <h3>PC Personalizado Temático</h3>
+                        <p>Equipo con mod personalizado inspirado en Cyberpunk 2077, con componentes de alta gama y detalles artesanales únicos.</p>
+                        <div class="specs">
+                            <span class="spec">Mod Custom</span>
+                            <span class="spec">RTX 3080</span>
+                            <span class="spec">i9 12900K</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="team">
+        <div class="container">
+            <h2>Nuestro Equipo</h2>
+            <p class="section-subtitle">Conoce a los profesionales detrás de Nahs Studios</p>
+            <div class="team-grid">
+                <!-- Miembro 1 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/miembro1.png" alt="Carlos Rodríguez">
+                    </div>
+                    <h3>Carlos Rodríguez</h3>
+                    <p>Especialista en hardware y fundador de Nahs Stuff Machine. Experto en armado de PCs de alto rendimiento.</p>
+                    <div class="member-divisions">
+                        <span class="division-tag">NSM</span>
+                        <span class="division-tag">Gaming</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><img src="images/github.png" alt="GitHub"></a>
+                        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                    <a href="miembros/carlos.html" class="btn member-btn">Ver Portafolio</a>
+                </div>
+                
+                <!-- Miembro 2 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/miembro2.jpg" alt="Laura Gómez">
+                    </div>
+                    <h3>Laura Gómez</h3>
+                    <p>Diseñadora 3D y animadora principal de Nahs Studios Animation. Especialista en motion graphics.</p>
+                    <div class="member-divisions">
+                        <span class="division-tag">Animation</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><img src="images/github.png" alt="GitHub"></a>
+                        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                    <a href="miembros/laura.html" class="btn member-btn">Ver Portafolio</a>
+                </div>
+                
+                <!-- Miembro 3 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/miembro3.jpg" alt="Miguel Sánchez">
+                    </div>
+                    <h3>Miguel Sánchez</h3>
+                    <p>Desarrollador de videojuegos y líder de Nahs Studios Gaming. Especialista en Unity y Unreal Engine.</p>
+                    <div class="member-divisions">
+                        <span class="division-tag">Gaming</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><img src="images/github.png" alt="GitHub"></a>
+                        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                    <a href="miembros/miguel.html" class="btn member-btn">Ver Portafolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¿Interesado en trabajar con nosotros? ¡Contáctanos!</p>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Nahs Studios. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#"><img src="images/github.png" alt="GitHub"></a>
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
