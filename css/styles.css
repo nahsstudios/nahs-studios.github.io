@@ -1,3 +1,35 @@
+/* Títulos principales con color navajo-white */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffdeabff;
+}
+/* Estilo característico para la palabra Nahs */
+.nahs-brand {
+    font-family: 'Montserrat', 'Arial Black', Arial, sans-serif;
+    font-size: 1.1em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #6fdc7e;
+    text-shadow: 0 2px 8px rgba(111,220,126,0.10);
+    display: inline-block;
+    text-transform: uppercase;
+}
+/* Bloque central para toda la web */
+.main-centered {
+    max-width: 900px;
+    margin: 40px auto 40px auto;
+    background: rgba(72, 75, 88, 0.92);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 32px 24px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero .main-centered {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
 /* Estilos generales */
 * {
     margin: 0;
@@ -8,8 +40,15 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f8f8;
+    color: #fff7ea;
+    background-color: #484b58;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 0.2s linear;
 }
 
 .container {
@@ -20,7 +59,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #fff7ea;
 }
 
 ul {
@@ -39,29 +78,29 @@ ul {
 }
 
 .primary-btn {
-    background: #e74c3c;
-    color: #fff;
+    background: #6fdc7e;
+    color: #fff7ea;
 }
 
 .primary-btn:hover {
-    background: #c0392b;
+    background: #6fdc7e;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .secondary-btn {
-    background: #3498db;
-    color: #fff;
+    background: #ffdeab;
+    color: #484b58;
 }
 
 .secondary-btn:hover {
-    background: #2980b9;
+    background: #6fdc7e;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-    background: #2980b9;
+    background: #6fdc7e;
 }
 
 section {
@@ -76,24 +115,23 @@ h2 {
 
 /* Header */
 header {
-    background-color: #fff;
+    background-color: #535970;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 100;
 }
 
 header .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0;
+    width: 100%;
+    min-height: 90px;
 }
 
 .logo h1 {
     font-size: 1.8rem;
-    color: #3498db;
+    color: #6fdc7e;
 }
 
 nav ul {
@@ -104,26 +142,90 @@ nav ul {
     padding: 0;
 }
 
+nav ul.menu-group {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    padding: 0 0 0 0;
+    margin: 0 auto 0 auto;
+    max-width: 900px;
+}
+
 nav ul li {
-    margin-left: 20px;
+    margin: 0 18px;
+    padding: 0;
 }
 
 nav ul li a {
-    font-weight: 600;
-    transition: color 0.3s, transform 0.3s;
+    font-weight: 800;
+    font-size: 1.18em;
+    letter-spacing: 1px;
+    transition: color 0.2s;
     position: relative;
-    padding: 8px 16px;
-    border-radius: 8px;
-    background: transparent;
+    padding: 12px 0;
+    border-radius: 0;
+    background: none;
+    color: #ffdeabff !important;
     z-index: 1;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: #fff;
-    background: #3498db;
-    transform: scale(1.08);
-    box-shadow: 0 4px 16px rgba(52, 152, 219, 0.15);
-    text-shadow: 0 2px 8px rgba(52, 152, 219, 0.2);
+    color: #ffdeabff;
+    background: none;
+    box-shadow: none;
+    border: none;
+    text-shadow: none;
+}
+
+nav ul.menu-group li a {
+    color: #484b58;
+}
+
+nav ul.menu-group li a:hover {
+    background: none;
+    color: #6fdc7e;
+}
+
+ .logo-center .logo-visual {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .menu-icon {
+     width: 160px;
+     height: 160px;
+     margin-right: 10px;
+     vertical-align: middle;
+     border: none !important;
+     background: none !important;
+     box-shadow: none !important;
+     border-radius: 0 !important;
+     object-fit: contain;
+     display: inline-block;
+     filter: none !important;
+}
+
+
+nav ul li a:hover img.menu-icon {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    filter: none !important;
 }
 
 /* Hero Section */
@@ -135,20 +237,20 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #fff;
+    color: #fff7ea;
     margin-top: 60px;
 }
 
 /* Divisions Section */
 .divisions-section {
-    background-color: #f8f8f8;
+    background-color: #535970;
     padding: 100px 0;
 }
 
 .section-subtitle {
     text-align: center;
     font-size: 1.2rem;
-    color: #666;
+    color: #fff7ea;
     margin-bottom: 40px;
 }
 
@@ -166,7 +268,7 @@ nav ul li a:hover {
     margin: 0 5px 10px;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #666;
+    color: #fff7ea;
     cursor: pointer;
     position: relative;
     transition: all 0.3s ease;
@@ -180,16 +282,16 @@ nav ul li a:hover {
     transform: translateX(-50%);
     width: 0;
     height: 3px;
-    background: #3498db;
+    background: #ffdeab;
     transition: width 0.3s ease;
 }
 
 .tab-btn:hover {
-    color: #333;
+    color: #fff7ea;
 }
 
 .tab-btn.active {
-    color: #3498db;
+    color: #6fdc7e;
 }
 
 .tab-btn.active:after {
@@ -273,8 +375,8 @@ nav ul li a:hover {
 
 .filter-btn {
     background: none;
-    border: 2px solid #3498db;
-    color: #3498db;
+    border: 2px solid #fff7ea;
+    color: #6fdc7e;
     padding: 8px 20px;
     margin: 0 10px 10px;
     border-radius: 30px;
@@ -284,8 +386,8 @@ nav ul li a:hover {
 }
 
 .filter-btn:hover, .filter-btn.active {
-    background: #3498db;
-    color: #fff;
+    background: #ffdeab;
+    color: #484b58;
 }
 
 .project-grid {
@@ -308,11 +410,11 @@ nav ul li a:hover {
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
-    color: #333;
+    color: #fff7ea;
 }
 
 .project-card {
-    background: #fff;
+    background: #535970;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -350,7 +452,7 @@ nav ul li a:hover {
 
 .project-info p {
     margin-bottom: 20px;
-    color: #666;
+    color: #fff7ea;
 }
 
 /* Team Section */
@@ -366,7 +468,7 @@ nav ul li a:hover {
 }
 
 .team-member {
-    background: #fff;
+    background: #535970;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -404,7 +506,7 @@ nav ul li a:hover {
 .team-member p {
     padding: 0 20px;
     margin-bottom: 15px;
-    color: #666;
+    color: #fff7ea;
     font-size: 0.95rem;
     line-height: 1.5;
 }
@@ -418,7 +520,7 @@ nav ul li a:hover {
 
 .division-tag {
     background: #e8f4fc;
-    color: #3498db;
+    color: #6fdc7e;
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -427,7 +529,7 @@ nav ul li a:hover {
 
 .member-btn {
     margin-top: 15px;
-    background: #3498db;
+    background: #ffdeab;
     color: white;
     display: inline-block;
     padding: 8px 20px;
@@ -437,7 +539,7 @@ nav ul li a:hover {
 }
 
 .member-btn:hover {
-    background: #2980b9;
+    background: #6fdc7e;
     transform: translateY(-3px);
 }
 
@@ -448,13 +550,22 @@ nav ul li a:hover {
 }
 
 .social-links img {
-    width: 25px;
-    height: 25px;
-    transition: transform 0.3s ease;
+    width: 96px;
+    height: 96px;
+    margin: 0 12px;
+    border: 3px solid #fff7ea;
+    border-radius: 18px;
+    box-shadow: 0 8px 48px rgba(83, 89, 112, 0.18), 0 2px 16px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    background: #535970;
+    object-fit: cover;
 }
 
 .social-links img:hover {
-    transform: scale(1.2);
+    transform: scale(1.12) rotate(-6deg);
+    box-shadow: 0 16px 64px rgba(83, 89, 112, 0.22), 0 4px 32px rgba(0, 0, 0, 0.18);
+    border-color: #fff7ea;
+    background: #535970;
 }
 
 /* Contact Section */
@@ -498,8 +609,8 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #484b58;
+    color: #fff7ea;
     padding: 30px 0;
     text-align: center;
 }
