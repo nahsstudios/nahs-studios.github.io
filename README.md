@@ -66,4 +66,4 @@ Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más deta
 
 Nahs Studios - [Insertar email de contacto]
 
-Link del proyecto: [https://github.com/tu-usuario/nahs-studios-web](https://github.com/tu-usuario/nahs-studios-web)
+Link del proyecto: https://nahsstudios.github.io/nahs-studios.github.io
